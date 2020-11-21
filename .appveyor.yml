@@ -1,20 +1,16 @@
-image: Ubuntu1804  # образ для сборки
-
-stack: node 14  # окружение
-
-branches:
+image: Ubuntu1804
+stack: node 12
+branches: 
   only:
-    - master  # ветка git
-
-cache: node_modules  # кеширование
-
+    - master
+cache: node_modules
 install:
-  - yarn install  # команда установки зависимостей
-
-build: off  # отключаем встроенную в appveyor систему сборки
-
+  - yarn
+build: off
 build_script:
-  - yarn build   # команда сборки
+  - yarn build
+test_script: 
+  - yarn lint && yarn test
 
 test_script:
   - yarn lint && yarn test  # скрипт тестирования
