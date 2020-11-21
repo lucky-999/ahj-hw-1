@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/lucky-999/ahj-hw-1.git",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest --passWithNoTests",
+    "coverage": "jest --coverage",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
   "author": "Ilya Tatarinov <itatarinov7@gmail.com>",
   "license": "MIT",
   "devDependencies": {
