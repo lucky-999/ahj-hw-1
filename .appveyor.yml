@@ -10,12 +10,8 @@ build: off
 build_script:
   - yarn build
 test_script: 
-  - yarn lint && yarn test
-
-test_script:
-  - yarn lint && yarn test  # скрипт тестирования
-
-  deploy_script: # скрипт развёртывания
+  - yarn lint && yarn test 
+deploy_script: 
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
   - git config --global user.email ci@appveyor.com
