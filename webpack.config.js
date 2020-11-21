@@ -1,3 +1,4 @@
+
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -6,11 +7,11 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.bundle.js',
+    
   },
-  devtool: 'source-map',
   module: {
     rules: [
+
       {
         test: /\.(png|jpg|gif)$/i,
         use: [
@@ -22,6 +23,7 @@ module.exports = {
           },
         ],
       },
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
