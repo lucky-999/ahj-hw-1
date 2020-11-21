@@ -1,0 +1,8 @@
+{
+  "name": "ahj-hw-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lucky-999/ahj-hw-1.git",
+  "author": "Ilya Tatarinov <itatarinov7@gmail.com>",
+  "license": "MIT"
+}
